@@ -1,0 +1,84 @@
+/* user_management.css */
+
+.page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.search-form input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+}
+
+.search-button {
+    border-radius: 0 4px 4px 0;
+    padding: 10px 20px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.user-table th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+}
+
+.user-table tr:last-child td {
+    border-bottom: none;
+}
+
+.user-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.action-buttons {
+    white-space: nowrap;
+}
+
+.edit-button,
+.delete-button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.add-button {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.no-results {
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    color: #666;
+}

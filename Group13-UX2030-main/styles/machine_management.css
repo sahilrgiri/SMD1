@@ -1,0 +1,193 @@
+
+.dashboard-section {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.actions-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-form {
+    display: flex;
+    gap: 10px;
+}
+
+.search-form input[type="text"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.data-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #444;
+}
+
+.data-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.status-cell {
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.status-toggle.non-operational {
+    background-color: #6c757d;
+}
+
+.status-cell {
+    font-weight: 600;
+}
+
+.status-cell.operational {
+    color: #09a225;
+}
+
+.status-cell.non-operational {
+    color: #dc3545;
+}
+
+.status-cell.maintenance {
+    color: #ffc107;
+}
+.status-cell.idle {
+    color: #6d6d68;
+}
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    background-color: #09a225;
+    transition: background-color 0.3s;
+}
+
+.edit-button {
+    background-color: #4a69bd;
+}
+.toggle-status {
+    min-width: 160px;
+    background-color: #09a225;
+    transition: all 0.3s ease;
+}
+
+.toggle-status.non-operational {
+    background-color: #6c757d;
+}
+
+.toggle-status:hover {
+    opacity: 0.9;
+}
+
+.status-cell {
+    font-weight: 600;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.status-cell.operational {
+    color: #09a225;
+}
+
+.status-cell.non-operational {
+    color: #dc3545;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.pagination .button {
+    padding: 8px 12px;
+}
+
+.pagination .active {
+    background-color: #4a69bd;
+}
+
+.maintenance-log {
+    max-width: 200px; 
+}
+
+.maintenance-log .log-content {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+
+/* Optional: Add tooltip on hover */
+.maintenance-log .log-content:hover {
+    position: relative;
+}
+
+.maintenance-log .log-content:hover::after {
+    content: attr(data-full-text);
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: white;
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
+    white-space: normal;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+/* Style for the table */
+.data-table td {
+    padding: 12px 16px;
+    vertical-align: middle;
+}
+
+/* Style for power consumption column */
+.data-table td:nth-child(4) {
+    text-align: right; /* Align numbers to the right */
+    font-family: monospace; /* Use monospace for numbers */
+}
+
+
+td[data-column="power"] {
+    text-align: center !important;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: monospace;
+  
+}
